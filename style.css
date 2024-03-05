@@ -666,14 +666,14 @@ input[type="checkbox"] {
 }
 .popup input[type="text"] {
   width: 40%;
-  height: 10%;
+  height: 12%;
   font-size: 5vw;
   margin-bottom: 10px;
   text-align: center;
 }
 .popup button {
   width: 10%;
-  height: 5%;
+  height: 6%;
   font-size: 1.5vw;
   padding: 5px 10px;
   background-color: #333;
