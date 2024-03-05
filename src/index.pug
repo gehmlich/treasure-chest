@@ -1,0 +1,147 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Treasure Chest
+    link(rel="stylesheet", href="style.css")
+  body
+    #sliders
+      #slider-cont
+        label(for="x-slider") 
+          span Rotate X 
+          span#x-deg
+        input#x-slider(type="range", min="0", max="360", value="320")
+        label(for="y-slider") 
+          span Rotate Y 
+          span#y-deg
+        input#y-slider(type="range", min="0", max="360", value="330")
+
+    input(type="checkbox", id="toggle-treasure")
+    #treasure-chest-positioner
+      label#treasure-chest(for="toggle-treasure")
+        #lid
+          #lid-left
+            - for (var i = 0; i < 5; i++)
+              .side-panel
+          #lid-panels
+            - for (var i = 0; i < 5; i++)
+              div.panel(id=`panel-${i}`)
+                div.board.top
+                div.board.bottom
+                div.iron-band.left
+                  - for (var j = 0; j < 8; j++)
+                    .circle
+                div.iron-band.middle
+                  - for (var j = 0; j < 8; j++)
+                    .circle
+                div.iron-band.right
+                  - for (var j = 0; j < 8; j++)
+                    .circle
+          #lid-right
+            - for (var i = 0; i < 5; i++)
+              .side-panel
+        #chest
+          #front-panel
+            - for (var i = 0; i < 4; i++)
+              .side-chest-panel
+            .iron-bars
+              .top-bar.iron-bar.long
+                - for(var i = 0; i < 6; i++)
+                  .circle-cont
+                    - for (var j = 0; j < 8; j++)
+                      .circle
+              .bottom-bar.iron-bar.long
+                - for(var i = 0; i < 6; i++)
+                  .circle-cont
+                    - for (var j = 0; j < 8; j++)
+                      .circle
+              .middle-bar.iron-bar.short
+                #lock
+                  #keyhole
+              .left-bar.iron-bar.short
+                - for(var i = 0; i < 4; i++)
+                  .circle-cont
+                    - for (var j = 0; j < 8; j++)
+                      .circle
+              .right-bar.iron-bar.short
+                - for(var i = 0; i < 4; i++)
+                  .circle-cont
+                    - for (var j = 0; j < 8; j++)
+                      .circle
+          #left-panel
+            - for (var i = 0; i < 4; i++)
+              .side-chest-panel
+            .iron-bars
+              .top-bar.iron-bar.long
+                - for(var i = 0; i < 3; i++)
+                  .circle-cont
+                    - for (var j = 0; j < 8; j++)
+                      .circle
+              .bottom-bar.iron-bar.long
+                - for(var i = 0; i < 3; i++)
+                  .circle-cont
+                    - for (var j = 0; j < 8; j++)
+                      .circle
+              .left-bar.iron-bar.short
+                - for(var i = 0; i < 4; i++)
+                  .circle-cont
+                    - for (var j = 0; j < 8; j++)
+                      .circle
+              .right-bar.iron-bar.short
+                - for(var i = 0; i < 4; i++)
+                  .circle-cont
+                    - for (var j = 0; j < 8; j++)
+                      .circle
+          #bottom-panel
+             - for (var i = 0; i < 4; i++)
+              .side-chest-panel
+          #right-panel
+            - for (var i = 0; i < 4; i++)
+              .side-chest-panel
+            .iron-bars
+              .top-bar.iron-bar.long
+                - for(var i = 0; i < 3; i++)
+                  .circle-cont
+                    - for (var j = 0; j < 8; j++)
+                      .circle
+              .bottom-bar.iron-bar.long
+                - for(var i = 0; i < 3; i++)
+                  .circle-cont
+                    - for (var j = 0; j < 8; j++)
+                      .circle
+              .left-bar.iron-bar.short
+                - for(var i = 0; i < 4; i++)
+                  .circle-cont
+                    - for (var j = 0; j < 8; j++)
+                      .circle
+              .right-bar.iron-bar.short
+                - for(var i = 0; i < 4; i++)
+                  .circle-cont
+                    - for (var j = 0; j < 8; j++)
+                      .circle
+          #back-panel
+            - for (var i = 0; i < 4; i++)
+              .side-chest-panel
+            .iron-bars
+              .top-bar.iron-bar.long
+                - for(var i = 0; i < 6; i++)
+                  .circle-cont
+                    - for (var j = 0; j < 8; j++)
+                      .circle
+              .middle-bar.iron-bar.short
+              .bottom-bar.iron-bar.long
+                - for(var i = 0; i < 6; i++)
+                  .circle-cont
+                    - for (var j = 0; j < 8; j++)
+                      .circle
+              .left-bar.iron-bar.short
+                - for(var i = 0; i < 4; i++)
+                  .circle-cont
+                    - for (var j = 0; j < 8; j++)
+                      .circle
+              .right-bar.iron-bar.short
+                - for(var i = 0; i < 4; i++)
+                  .circle-cont
+                    - for (var j = 0; j < 8; j++)
+                      .circle

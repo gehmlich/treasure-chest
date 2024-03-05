@@ -1,0 +1,26 @@
+{
+  "name": "treasure-chest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build:pug": "pug src/*.pug --out dist --pretty",
+    "build:sass": "sass src/style.scss dist/style.css",
+    "build": "npm run build:pug && npm run build:sass && cp src/script.js dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gehmlich/treasure-chest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gehmlich/treasure-chest/issues"
+  },
+  "homepage": "https://github.com/gehmlich/treasure-chest#readme",
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.71.1"
+  }
+}
