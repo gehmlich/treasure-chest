@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Checkbox to toggle the chest -->
     <input type="checkbox" id="toggle-treasure" />
     <div id="treasure-chest-positioner">
       <label id="treasure-chest" for="toggle-treasure">
+        <!-- Chest structure -->
         <div id="lid">
           <div id="lid-left">
             <div class="side-panel"></div>
@@ -958,5 +960,13 @@
         </div>
       </label>
     </div>
+
+    <!-- Popup for entering code -->
+    <div class="popup" id="codePopup">
+      <input type="text" id="codeInput" placeholder="Code eingeben" />
+      <button id="submitBtn" onclick="checkCode()">Bestätigen</button>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

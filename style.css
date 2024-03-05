@@ -650,4 +650,34 @@ input[type="checkbox"] {
   margin-bottom: 1.25rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* Popup styling */
+.popup {
+  display: flex;
+  flex-direction: column; /* Display items vertically */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* black with 60% opacity */
+  z-index: 50;
+}
+.popup input[type="text"] {
+  width: 40%;
+  height: 10%;
+  font-size: 80px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.popup button {
+  width: 10%;
+  height: 5%;
+  font-size: 25px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
