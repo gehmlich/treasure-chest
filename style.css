@@ -684,9 +684,8 @@ input[type="checkbox"] {
 
 .image-container {
   position: fixed;
-  top: 25%;
-  left: 25%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 10%;
   z-index: 1000;
   text-align: center;
 }
