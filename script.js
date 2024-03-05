@@ -52,7 +52,7 @@ function addTopImage() {
   var centeredText = document.createElement("div");
   centeredText.classList.add("centered-text");
   centeredText.textContent =
-    "Herzlichen Glückwunsch! Du hast alle Rätsel gelöst.";
+    "Herzlichen Glückwunsch! Ihr habt alle Rätsel gelöst.";
 
   // Append the image and text elements to the container
   imageContainer.appendChild(topImage);
