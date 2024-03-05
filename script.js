@@ -7,7 +7,7 @@ function checkCode() {
     document.getElementById("toggle-treasure").checked = true;
     closePopup();
   } else {
-    alert("Incorrect code. Please try again.");
+    alert("Der Code ist falsch. Bitte versuche es erneut.");
   }
 }
 
