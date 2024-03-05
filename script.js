@@ -1,3 +1,4 @@
+/* Function declaration Section */
 // Function to check the entered code
 function checkCode() {
   var enteredCode = document.getElementById("codeInput").value;
@@ -30,7 +31,7 @@ function addTopImage() {
 
   // Create the image element
   var topImage = document.createElement("img");
-  topImage.src = "map.png";
+  topImage.src = "role.png";
   topImage.classList.add("top-image");
   topImage.style.animation = "flyIn 1s ease-in"; // Add fly-in animation
 
@@ -66,6 +67,7 @@ function popConfetti() {
   });
 }
 
+/* Document section */
 // Get the input field
 var input = document.getElementById("codeInput");
 // Execute a function when the user releases a key on the keyboard
