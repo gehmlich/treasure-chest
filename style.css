@@ -730,24 +730,27 @@ input[type="checkbox"] {
   }
 }
 
-.shake {
-  animation: shake 0.5s;
-}
-
 @keyframes shake {
   0% {
-    transform: translateX(0);
+    transform: translateX(0) rotate(0);
   }
-  25% {
-    transform: translateX(-10%);
+  20% {
+    transform: translateX(-5%) rotate(-5deg);
   }
-  50% {
-    transform: translateX(10%);
+  40% {
+    transform: translateX(5%) rotate(5deg);
   }
-  75% {
-    transform: translateX(-10%);
+  60% {
+    transform: translateX(-5%) rotate(-5deg);
+  }
+  80% {
+    transform: translateX(5%) rotate(5deg);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(0) rotate(0);
   }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
 }
