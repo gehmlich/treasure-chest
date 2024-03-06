@@ -9,7 +9,10 @@ function checkCode() {
     addTopImage();
     closePopup();
   } else {
-    alert("Der Code ist falsch. Bitte versuche es erneut.");
+    // Shake effect
+    codeInput.classList.remove("shake"); // Remove shake class if it was previously applied
+    void codeInput.offsetWidth; // Trigger reflow to restart the animation
+    codeInput.classList.add("shake"); // Reapply shake class to trigger animation
   }
 }
 
